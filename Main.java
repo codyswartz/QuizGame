@@ -5,26 +5,25 @@ public class QuizGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Define an array of questions and answers
         String[] questions = {
-            "What is the capital of France?",
-            "Which planet is known as the Red Planet?",
+            "What is my last name?",
+            "What is my favorite color?",
             "What is 2 + 2?",
-            "Who wrote 'Romeo and Juliet'?",
-            "What is the largest mammal on Earth?"
+            "What is my favorite video game?",
+            "What is mt favorite animal?"
         };
 
         String[] answers = {
-            "Paris",
-            "Mars",
+            "Swartz",
+            "Red",
             "4",
-            "William Shakespeare",
-            "Blue Whale"
+            "Valorant",
+            "Cat"
         };
 
         int score = 0;
 
-        System.out.println("Welcome to the Quiz Game!");
+        System.out.println("Welcome to my Quiz Game!");
         System.out.println("Answer the following questions.");
 
         for (int i = 0; i < questions.length; i++) {
