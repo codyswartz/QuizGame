@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class QuizGame {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner quiz = new Scanner(System.in);
 
         String[] questions = {
             "What is my last name?",
@@ -29,7 +29,7 @@ public class QuizGame {
         for (int i = 0; i < questions.length; i++) {
             System.out.println("\nQuestion " + (i + 1) + ": " + questions[i]);
             System.out.print("Your answer: ");
-            String userAnswer = scanner.nextLine();
+            String userAnswer = quiz.nextLine();
 
             if (userAnswer.equalsIgnoreCase(answers[i])) {
                 System.out.println("Correct!");
@@ -42,6 +42,6 @@ public class QuizGame {
         System.out.println("\nQuiz Complete!");
         System.out.println("Your Score: " + score + " out of " + questions.length);
 
-        scanner.close();
+        quiz.close();
     }
 }
